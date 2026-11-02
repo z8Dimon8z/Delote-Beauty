@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#111110" />
+    <meta
+      name="description"
+      content="Delote Beauty — салон красоты на Крестовском острове. Парикмахерские услуги, маникюр, косметология и макияж."
+    />
+    <title>Delote Beauty — салон красоты на Крестовском</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <div class="nav-wrap">
+        <a
+          class="instagram"
+          href="https://instagram.com/"
+          aria-label="Instagram"
+          target="_blank"
+          rel="noreferrer"
+          ><svg viewBox="0 0 24 24" aria-hidden="true">
+            <rect x="3" y="3" width="18" height="18" rx="5" />
+            <circle cx="12" cy="12" r="4" />
+            <circle class="dot" cx="18" cy="6" r=".8" /></svg
+        ></a>
+        <button
+          class="menu-toggle"
+          aria-label="Открыть меню"
+          aria-expanded="false"
+        >
+          <span></span><span></span>
+        </button>
+        <nav class="main-nav" aria-label="Основная навигация">
+          <a href="#top">Главная</a><a href="#services">Услуги</a
+          ><a href="#team">Мастера</a>
+          <a class="brand" href="#top" aria-label="Delote Beauty">Ω</a>
+          <a href="#portfolio">Портфолио</a><a href="#prices">Цены</a
+          ><a href="#contacts">Контакты</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero" aria-label="Delote Beauty">
+        <div class="hero-shade"></div>
+        <div class="hero-copy">
+          <p class="eyebrow">Салон красоты · Санкт-Петербург</p>
+          <h1>Красота —<br />в деталях</h1>
+          <p class="hero-sub">Delote Beauty на Крестовском острове</p>
+          <a class="button button-light" href="#contacts"
+            >Записаться на визит <span>↗</span></a
+          >
+        </div>
+        <a class="scroll-cue" href="#about"
+          ><span class="mouse-icon"></span> Прокрутите вниз</a
+        >
+        <div class="hero-note">
+          <span>01 / 04</span><i></i><span>С 2017 года</span>
+        </div>
+      </section>
+      <section class="intro section" id="about">
+        <div class="quote-mark">“</div>
+        <p>
+          Место, где забота о себе становится искусством. Мы соединяем
+          мастерство, внимание к деталям и лучшие профессиональные средства,
+          чтобы подчеркнуть именно вашу красоту.
+        </p>
+        <span class="signature">Delote Beauty</span>
+      </section>
+      <section class="section services" id="services">
+        <div class="section-heading">
+          <p class="eyebrow">Позвольте себе больше</p>
+          <h2>Наши услуги</h2>
+        </div>
+        <div class="service-grid">
+          <a class="service-card" href="#prices"
+            ><img src="img/1.avif" alt="Укладка волос в салоне" /><span
+              class="service-number"
+              >01</span
+            >
+            <h3>Парикмахерские услуги</h3>
+            <span class="card-arrow">↗</span></a
+          >
+          <a class="service-card" href="#prices"
+            ><img src="img/2.avif" alt="Маникюр" /><span class="service-number"
+              >02</span
+            >
+            <h3>Маникюр</h3>
+            <span class="card-arrow">↗</span></a
+          >
+          <a class="service-card" href="#prices"
+            ><img src="img/3.avif" alt="Расслабляющий уход" /><span
+              class="service-number"
+              >03</span
+            >
+            <h3>Педикюр и уход</h3>
+            <span class="card-arrow">↗</span></a
+          >
+          <a class="service-card" href="#prices"
+            ><img src="img/3.avif" alt="Косметологический уход" /><span
+              class="service-number"
+              >04</span
+            >
+            <h3>Косметология</h3>
+            <span class="card-arrow">↗</span></a
+          >
+          <a class="service-card" href="#prices"
+            ><img src="img/4.avif" alt="Уход за телом" /><span
+              class="service-number"
+              >05</span
+            >
+            <h3>Эстетика тела</h3>
+            <span class="card-arrow">↗</span></a
+          >
+          <a class="service-card" href="#prices"
+            ><img src="img/5.avif" alt="Профессиональный макияж" /><span
+              class="service-number"
+              >06</span
+            >
+            <h3>Визаж</h3>
+            <span class="card-arrow">↗</span></a
+          >
+        </div>
+      </section>
+      <section class="brands section" aria-label="Профессиональная косметика">
+        <span>KEVIN.MURPHY</span><span class="brand-serif">ORIBE</span
+        ><span class="brand-light">ALTERNA</span
+        ><span class="brand-circle">ALDO<br />COPPOLA</span>
+      </section>
+      <section class="section portfolio" id="portfolio">
+        <div class="section-heading">
+          <p class="eyebrow">Вдохновение для вашего образа</p>
+          <h2>Наши работы</h2>
+        </div>
+        <div class="filters" role="group" aria-label="Фильтр работ">
+          <button class="filter active" data-filter="all">Все работы</button
+          ><button class="filter" data-filter="hair">Волосы</button
+          ><button class="filter" data-filter="makeup">Макияж</button
+          ><button class="filter" data-filter="nails">Ногти</button>
+        </div>
+        <div class="work-grid">
+          <figure data-kind="makeup">
+            <img src="img/portfolio/1.avif" alt="Нежный макияж" />
+            <figcaption>Естественный макияж</figcaption>
+          </figure>
+          <figure data-kind="hair">
+            <img src="img/portfolio/2.avif" alt="Образ с укладкой" />
+            <figcaption>Объёмная укладка</figcaption>
+          </figure>
+          <figure data-kind="nails">
+            <img src="img/portfolio/3.avif" alt="Маникюр с покрытием" />
+            <figcaption>Маникюр</figcaption>
+          </figure>
+          <figure data-kind="makeup">
+            <img src="img/portfolio/4.avif" alt="Вечерний образ" />
+            <figcaption>Вечерний образ</figcaption>
+          </figure>
+          <figure data-kind="hair">
+            <img src="img/portfolio/5.avif" alt="Уход и укладка" />
+            <figcaption>Уход и укладка</figcaption>
+          </figure>
+          <figure data-kind="nails">
+            <img src="img/portfolio/6.avif" alt="Дизайн ногтей" />
+            <figcaption>Дизайн ногтей</figcaption>
+          </figure>
+        </div>
+      </section>
+      <section class="team section" id="team">
+        <div class="section-heading">
+          <p class="eyebrow">Ваши проводники в мире красоты</p>
+          <h2>Наши мастера</h2>
+        </div>
+        <div class="team-grid">
+          <article class="master">
+            <img src="img/masters/1.avif" alt="Мастер салона" />
+            <h3>Анна Смирнова</h3>
+            <p>Стилист · колорист</p>
+            <span>Опыт 12 лет</span>
+          </article>
+          <article class="master">
+            <img src="img/masters/2.avif" alt="Мастер салона" />
+            <h3>Елена Васильева</h3>
+            <p>Визажист · бровист</p>
+            <span>Опыт 8 лет</span>
+          </article>
+          <article class="master">
+            <img src="img/masters/3.avif" alt="Мастер салона" />
+            <h3>Мария Лебедева</h3>
+            <p>Мастер маникюра</p>
+            <span>Опыт 10 лет</span>
+          </article>
+        </div>
+      </section>
+      <section class="section prices" id="prices">
+        <div class="section-heading">
+          <p class="eyebrow">Прозрачно и с заботой</p>
+          <h2>Популярные услуги</h2>
+        </div>
+        <div class="price-list">
+          <div class="price-item">
+            <div>
+              <h3>Стрижка и укладка</h3>
+              <p>Мытьё, стрижка, укладка по форме лица</p>
+            </div>
+            <span>от 3 500 ₽</span>
+          </div>
+          <div class="price-item">
+            <div>
+              <h3>Окрашивание волос</h3>
+              <p>Индивидуальный подбор оттенка и уход</p>
+            </div>
+            <span>от 8 000 ₽</span>
+          </div>
+          <div class="price-item">
+            <div>
+              <h3>Маникюр с покрытием</h3>
+              <p>Комбинированный маникюр, гель-лак</p>
+            </div>
+            <span>от 3 200 ₽</span>
+          </div>
+          <div class="price-item">
+            <div>
+              <h3>Дневной макияж</h3>
+              <p>Лёгкий образ для события или каждый день</p>
+            </div>
+            <span>от 4 500 ₽</span>
+          </div>
+          <div class="price-item">
+            <div>
+              <h3>Уход для лица</h3>
+              <p>Консультация и процедура по типу кожи</p>
+            </div>
+            <span>от 5 000 ₽</span>
+          </div>
+        </div>
+        <p class="price-note">
+          Итоговая стоимость зависит от длины волос и выбранных материалов.
+          Мастер согласует её до начала процедуры.
+        </p>
+        <a class="text-link" href="#contacts"
+          >Уточнить стоимость <span>↗</span></a
+        >
+      </section>
+      <section class="contact-section section" id="contacts">
+        <div class="contact-photo"></div>
+        <div class="contact-content">
+          <p class="eyebrow">Будем рады видеть вас</p>
+          <h2>Время для себя</h2>
+          <p class="contact-lead">
+            Запишитесь на удобное время — администратор поможет выбрать услугу и
+            мастера.
+          </p>
+          <div class="contact-details">
+            <div>
+              <span>Адрес</span>
+              <p>
+                Новостровский проспект, дом 36 лит. С<br />Санкт-Петербург,
+                Крестовский остров
+              </p>
+            </div>
+            <div>
+              <span>Телефон</span>
+              <p>
+                <a href="tel:+78121234567">+7 (812) 123-45-67</a><br /><a
+                  href="tel:+79111234567"
+                  >+7 (911) 123-45-67</a
+                >
+              </p>
+            </div>
+            <div>
+              <span>Часы работы</span>
+              <p>Пн–Пт · 10:00–21:00<br />Сб–Вс · 11:00–20:00</p>
+            </div>
+          </div>
+          <button class="button button-gold" id="booking-open">
+            Оставить заявку <span>↗</span>
+          </button>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <a class="footer-logo" href="#top">Ω</a>
+      <div>
+        <h3>Контакты</h3>
+        <a href="tel:+78121234567">+7 (812) 123-45-67</a>
+        <p>Новостровский проспект, дом 36 лит. С</p>
+      </div>
+      <div>
+        <h3>Режим работы</h3>
+        <p>Пн–Пт · 10:00–21:00</p>
+        <p>Сб–Вс · 11:00–20:00</p>
+      </div>
+      <div>
+        <h3>Мы в Instagram</h3>
+        <a
+          class="instagram footer-instagram"
+          href="https://instagram.com/"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Instagram"
+          ><svg viewBox="0 0 24 24">
+            <rect x="3" y="3" width="18" height="18" rx="5" />
+            <circle cx="12" cy="12" r="4" /></svg
+        ></a>
+      </div>
+      <div class="copyright">© 2026 Delote Beauty. Красота в деталях.</div>
+    </footer>
+    <dialog class="booking-dialog" id="booking-dialog">
+      <button class="dialog-close" aria-label="Закрыть">×</button>
+      <p class="eyebrow">Delote Beauty</p>
+      <h2>Запись на визит</h2>
+      <p class="dialog-copy">
+        Оставьте контакты, и мы перезвоним, чтобы подобрать удобное время.
+      </p>
+      <form id="booking-form">
+        <label
+          >Ваше имя<input
+            name="name"
+            required
+            autocomplete="name"
+            placeholder="Как к вам обращаться" /></label
+        ><label
+          >Телефон<input
+            name="phone"
+            required
+            type="tel"
+            autocomplete="tel"
+            placeholder="+7 (___) ___-__-__" /></label
+        ><label
+          >Услуга<select name="service">
+            <option>Стрижка и укладка</option>
+            <option>Окрашивание</option>
+            <option>Маникюр</option>
+            <option>Косметология</option>
+            <option>Макияж</option>
+            <option>Другое</option>
+          </select></label
+        ><button class="button button-gold" type="submit">
+          Отправить заявку <span>↗</span>
+        </button>
+        <p class="form-note" aria-live="polite"></p>
+      </form>
+    </dialog>
+  </body>
+</html>
