@@ -24,15 +24,32 @@ document.querySelectorAll('.filter').forEach(button => button.addEventListener('
 }));
 
 const dialog = document.querySelector('#booking-dialog');
-document.querySelector('#booking-open').addEventListener('click', () => dialog.showModal());
+const bookingForm = document.querySelector('#booking-form');
+const bookingSuccess = document.querySelector('#booking-success');
+let bookingHideTimer;
+
+document.querySelector('#booking-open').addEventListener('click', () => {
+  clearTimeout(bookingHideTimer);
+  bookingForm.hidden = false;
+  bookingSuccess.hidden = true;
+  bookingForm.reset();
+  dialog.showModal();
+});
 document.querySelector('.dialog-close').addEventListener('click', () => dialog.close());
 dialog.addEventListener('click', event => {
   if (event.target === dialog) dialog.close();
 });
 
-document.querySelector('#booking-form').addEventListener('submit', event => {
+bookingForm.addEventListener('submit', event => {
   event.preventDefault();
-  document.querySelector('.form-note').textContent = 'Спасибо! Для подтверждения записи позвоните нам: +7 (812) 123-45-67.';
+  clearTimeout(bookingHideTimer);
+  bookingSuccess.hidden = false;
+  bookingHideTimer = setTimeout(() => {
+    document.querySelectorAll('form').forEach(form => {
+      form.hidden = true;
+    });
+    if (dialog.open) dialog.close();
+  }, 2000);
 });
 
 const revealObserver = new IntersectionObserver(entries => {

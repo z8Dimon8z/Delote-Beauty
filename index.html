@@ -9,14 +9,15 @@
       content="Delote Beauty — салон красоты на Крестовском острове. Парикмахерские услуги, маникюр, косметология и макияж."
     />
     <title>Delote Beauty — салон красоты на Крестовском</title>
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style.css" />
-    <script src="js/script.js" defer></script>
+
+    <script src="./js/script.js" defer></script>
   </head>
   <body>
     <header class="site-header" id="top">
@@ -56,8 +57,9 @@
           <h1>Красота —<br />в деталях</h1>
           <p class="hero-sub">Delote Beauty на Крестовском острове</p>
           <a class="button button-light" href="#contacts"
-            >Записаться на визит <span>↗</span></a
-          >
+            >Записаться на визит
+            <span><img src="img/svg/Arrow 1.svg" alt="icon" /></span
+          ></a>
         </div>
         <a class="scroll-cue" href="#about"
           ><span class="mouse-icon"></span> Прокрутите вниз</a
@@ -87,47 +89,53 @@
               >01</span
             >
             <h3>Парикмахерские услуги</h3>
-            <span class="card-arrow">↗</span></a
-          >
+            <span class="card-arrow"
+              ><img src="img/svg/Arrow 2.svg" alt="icon" /></span
+          ></a>
           <a class="service-card" href="#prices"
             ><img src="img/2.avif" alt="Маникюр" /><span class="service-number"
               >02</span
             >
             <h3>Маникюр</h3>
-            <span class="card-arrow">↗</span></a
-          >
+            <span class="card-arrow"
+              ><img src="img/svg/Arrow 2.svg" alt="icon" /></span
+          ></a>
           <a class="service-card" href="#prices"
             ><img src="img/3.avif" alt="Расслабляющий уход" /><span
               class="service-number"
               >03</span
             >
             <h3>Педикюр и уход</h3>
-            <span class="card-arrow">↗</span></a
-          >
+            <span class="card-arrow"
+              ><img src="img/svg/Arrow 2.svg" alt="icon" /></span
+          ></a>
           <a class="service-card" href="#prices"
             ><img src="img/3.avif" alt="Косметологический уход" /><span
               class="service-number"
               >04</span
             >
             <h3>Косметология</h3>
-            <span class="card-arrow">↗</span></a
-          >
+            <span class="card-arrow"
+              ><img src="img/svg/Arrow 2.svg" alt="icon" /></span
+          ></a>
           <a class="service-card" href="#prices"
             ><img src="img/4.avif" alt="Уход за телом" /><span
               class="service-number"
               >05</span
             >
             <h3>Эстетика тела</h3>
-            <span class="card-arrow">↗</span></a
-          >
+            <span class="card-arrow"
+              ><img src="img/svg/Arrow 2.svg" alt="icon" /></span
+          ></a>
           <a class="service-card" href="#prices"
             ><img src="img/5.avif" alt="Профессиональный макияж" /><span
               class="service-number"
               >06</span
             >
             <h3>Визаж</h3>
-            <span class="card-arrow">↗</span></a
-          >
+            <span class="card-arrow"
+              ><img src="img/svg/Arrow 2.svg" alt="icon" /></span
+          ></a>
         </div>
       </section>
       <section class="brands section" aria-label="Профессиональная косметика">
@@ -246,8 +254,9 @@
           Мастер согласует её до начала процедуры.
         </p>
         <a class="text-link" href="#contacts"
-          >Уточнить стоимость <span>↗</span></a
-        >
+          >Уточнить стоимость
+          <span><img src="img/svg/Arrow 2.svg" alt="icon" /></span
+        ></a>
       </section>
       <section class="contact-section section" id="contacts">
         <div class="contact-photo"></div>
@@ -281,7 +290,8 @@
             </div>
           </div>
           <button class="button button-gold" id="booking-open">
-            Оставить заявку <span>↗</span>
+            Оставить заявку
+            <span><img src="img/svg/Arrow 3.svg" alt="icon" /></span>
           </button>
         </div>
       </section>
@@ -344,10 +354,24 @@
             <option>Другое</option>
           </select></label
         ><button class="button button-gold" type="submit">
-          Отправить заявку <span>↗</span>
+          Отправить заявку
+          <span><img src="img/svg/Arrow 3.svg" alt="icon" /></span>
         </button>
-        <p class="form-note" aria-live="polite"></p>
       </form>
+      <div
+        class="booking-success"
+        id="booking-success"
+        role="status"
+        aria-live="polite"
+        hidden
+      >
+        <span class="success-icon" aria-hidden="true">✓</span>
+        <h3>Заявка отправлена</h3>
+        <p>
+          Спасибо, что выбрали Delote Beauty. Мы свяжемся с вами для
+          подтверждения записи.
+        </p>
+      </div>
     </dialog>
   </body>
 </html>
